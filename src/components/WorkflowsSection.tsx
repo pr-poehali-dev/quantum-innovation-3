@@ -1,53 +1,54 @@
 import { useState } from "react"
-import { ChevronLeft, ChevronRight, Plus, ArrowRight, MessageSquare, GitBranch, X, Puzzle, Figma } from "lucide-react"
+import { ChevronLeft, ChevronRight, Plus, ArrowRight, Shield, Zap, Globe2, Smartphone, Settings, Lock } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 const carouselCards = [
   {
     id: 1,
-    category: "Запросы клиентов",
-    title: "Создавайте то, что нужно клиентам",
-    icon: ArrowRight,
+    category: "Максимальная защита",
+    title: "Военное шифрование AES-256",
+    icon: Shield,
     mockup: "intercom",
   },
   {
     id: 2,
-    category: "Git-интеграция",
-    title: "Автоматизируйте PR и коммиты",
-    icon: Plus,
+    category: "Высокая скорость",
+    title: "Стриминг без задержек",
+    icon: Zap,
     mockup: "github",
   },
   {
     id: 3,
-    category: "Orbit Mobile",
-    title: "Управляйте работой откуда угодно",
-    icon: ArrowRight,
+    category: "SecureVPN Mobile",
+    title: "Защищённый интернет всегда с вами",
+    icon: Smartphone,
     mockup: "mobile",
   },
   {
     id: 4,
-    category: "Orbit Asks",
-    title: "Превращайте запросы в задачи",
-    icon: ArrowRight,
+    category: "Глобальная сеть",
+    title: "50+ стран для подключения",
+    icon: Globe2,
     mockup: "asks",
   },
   {
     id: 5,
-    category: "Интеграции Orbit",
-    title: "100+ способов расширить возможности",
-    icon: ArrowRight,
+    category: "Настройки",
+    title: "Гибкие протоколы и опции",
+    icon: Settings,
     mockup: "integrations",
   },
   {
     id: 6,
-    category: "Интеграция с Figma",
-    title: "Связь между разработкой и дизайном",
-    icon: ArrowRight,
+    category: "Приватность",
+    title: "Политика No-Logs",
+    icon: Lock,
     mockup: "figma",
   },
   {
     id: 7,
-    category: "Для разработчиков",
-    title: "Создавайте плагины через Orbit API",
+    category: "Мультиплатформенность",
+    title: "Windows, Mac, iOS, Android, Linux",
     icon: ArrowRight,
     mockup: "api",
   },
@@ -243,15 +244,15 @@ export function WorkflowsSection() {
             {/* Orange indicator */}
             <div className="flex items-center gap-2 mb-6">
               <div className="w-2 h-2 rounded-full bg-orange-500" />
-              <span className="text-sm text-zinc-400">Процессы и интеграции</span>
+              <span className="text-sm text-zinc-400">Возможности и функции</span>
               <ChevronRight className="w-4 h-4 text-zinc-600" />
             </div>
 
             {/* Heading */}
             <h2 className="text-4xl md:text-5xl font-medium text-white leading-[1.1]">
-              Работайте слаженно
+              Всё, что нужно
               <br />
-              между инструментами
+              для защищённого интернета
             </h2>
           </div>
 
